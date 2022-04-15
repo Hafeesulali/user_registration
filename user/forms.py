@@ -4,6 +4,7 @@ from django import forms
 from user.models import User
 
 
+# user registration form created using form and model form
 class UserRegistrationForm(forms.ModelForm):
     class Meta:
         model = User
@@ -14,6 +15,7 @@ class UserRegistrationForm(forms.ModelForm):
             "income",
             "ipaddress"
         ]
+        # forms styled
         widgets = {
             "name": forms.TextInput(attrs={"class": "form-control"}),
             "date": forms.DateInput(attrs={"class": "form-control "}),

@@ -1,6 +1,6 @@
 from django.urls import path
 from user import views
-
+# url added for registration,list,and delete views
 urlpatterns = [
     path('register', views.UserView.as_view(), name="user home"),
     path('all', views.UserListView.as_view(), name="user list"),
